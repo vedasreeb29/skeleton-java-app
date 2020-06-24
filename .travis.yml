@@ -2,3 +2,9 @@ language: java
 jdk:
 - openjdk8
 script: mvn clean verify
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: B7WyAhaUZVmoPvJYZpR5T26tjam2s9oI+usExdqo24otamaq/wVEGVdh9+tVEALWV0js3jYo+u4PvNaO+TPL0AY6/leOo2PmZygbWUQRplGIn4xwpitcQ1uqX7QABbREMfooeLpJZRD+Gz+WVeJ5+aWyeCmPZ4FEQn4ftXZRYUhExrBAj+3V35H9bTuKTd9zszYZujT4tmWh1P9Lf8HkBsmLMKKwAA1mnN3V4g7mKxLrTSaOW36rQZH751N+CUWWfIWXnFZLSA5ynkWOc9gV519+resy5Myu/zR69JURYRjRcdYTqdx0f+T3vIDUWhBSRl61XNl+6L3yR0dDCUiZOVuBZ1NUYKNoig7DHz0r8PDJaZZeKAc7TWQW67cUP3pcsSan8YXApLyaaYIHn5NGsGcrj6T1n/qcngHRUpoyD3L9PfHbGEcpvfOb6OYKvrDibJXHidUmLxhGWpMOMF4vkRSHHZpUqrukmW3pP9OKfc5cpw/wSWsai+hHx/5rtrBlJr/Wwq759T8RkialFs2JMkxqF1iQnZPP6LzeW9MdG4HIeYDk8pUKWY5KkknrtdoXf2r67vUL+x8HzzKX+QpiHEOCyHkguPjTyZLK4hMdrCvShI/p6bFZY5albDMJM8s447t5baR2jG7nHnwCm3O/oeCORu9sBp3xjMX5wLly/bE=
+  app: skeleton-java-app-heroku-integ
